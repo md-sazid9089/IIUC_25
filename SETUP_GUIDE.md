@@ -3,6 +3,7 @@
 ## 🚀 Quick Start (Development)
 
 ### Prerequisites
+
 - Node.js v18+ installed
 - MongoDB installed locally OR MongoDB Atlas account
 - Git (optional)
@@ -137,6 +138,7 @@ IIUC_25/
 1. **Create Render Account** at https://render.com
 
 2. **Create New Web Service**
+
    - Connect your GitHub repository
    - Select `backend` as root directory
    - Configure:
@@ -145,6 +147,7 @@ IIUC_25/
      - Environment: Node
 
 3. **Add Environment Variables**
+
    ```
    MONGO_URI=mongodb+srv://username:password@cluster.mongodb.net/careerpath
    JWT_SECRET=your_production_secret_key_here
@@ -159,11 +162,13 @@ IIUC_25/
 1. **Create Vercel Account** at https://vercel.com
 
 2. **Import Project**
+
    - Connect GitHub repository
    - Framework Preset: Vite
    - Root Directory: `frontend`
 
 3. **Configure Environment Variable**
+
    ```
    VITE_API_URL=https://your-backend-url.onrender.com/api
    ```
@@ -222,6 +227,7 @@ GET http://localhost:5000/api/recommendations/USER_ID
 ## 🎨 Design System
 
 ### Colors
+
 - **Primary**: `#00C16A` (Green - SDG 8 theme)
 - **Primary Dark**: `#009956`
 - **Background**: `#FFFFFF`
@@ -230,10 +236,12 @@ GET http://localhost:5000/api/recommendations/USER_ID
 - **Border**: `#E5E7EB`
 
 ### Typography
+
 - **Headings**: Poppins (bold, 600-800)
 - **Body**: Inter (400-600)
 
 ### Components
+
 - Rounded corners (8-16px)
 - Subtle shadows
 - Smooth transitions (200ms)
@@ -247,12 +255,14 @@ GET http://localhost:5000/api/recommendations/USER_ID
 The database includes:
 
 ### Jobs (20 samples)
+
 - **Types**: Internship, Part-time, Full-time, Freelance, Contract
 - **Levels**: Student, Fresher, Junior, Mid-level
 - **Skills**: HTML, CSS, JavaScript, React, Python, Excel, Design, etc.
 - **Locations**: Remote, Dhaka, Chittagong, Sylhet
 
 ### Resources (20 samples)
+
 - **Platforms**: Udemy, Coursera, YouTube, FreeCodeCamp, MongoDB University
 - **Costs**: Free, Paid, Freemium
 - **Skills**: Programming, Design, Marketing, Data Analysis, etc.
@@ -273,21 +283,25 @@ The database includes:
 ## 🐛 Troubleshooting
 
 ### Backend won't start
+
 - Check MongoDB is running: `mongod` or Atlas connection string
 - Verify `.env` file exists with correct values
 - Check port 5000 is not in use
 
 ### Frontend can't connect to backend
+
 - Ensure backend is running on port 5000
 - Check `VITE_API_URL` in frontend `.env`
 - Verify CORS is enabled in backend
 
 ### Seed script fails
+
 - Ensure MongoDB is connected
 - Check for duplicate data (run seed again to clear and re-seed)
 - Verify models are correctly defined
 
 ### Recommendations not showing
+
 - User must have skills added in profile
 - Jobs/Resources must exist in database (run seed)
 - Check browser console for errors
@@ -309,6 +323,7 @@ Future enhancements could include:
 ## 📞 Support
 
 For issues or questions:
+
 - Check console logs (browser & terminal)
 - Review error messages carefully
 - Ensure all dependencies are installed

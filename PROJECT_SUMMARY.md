@@ -5,6 +5,7 @@
 A complete, production-ready MERN stack application with:
 
 ### Backend (Node.js + Express + MongoDB)
+
 - ✅ JWT Authentication (register, login, protected routes)
 - ✅ User profile management with skills tracking
 - ✅ Job listings with filtering (type, location, experience)
@@ -17,6 +18,7 @@ A complete, production-ready MERN stack application with:
 - ✅ Error handling & validation
 
 ### Frontend (React + Vite + TailwindCSS)
+
 - ✅ Beautiful, responsive UI (mobile, tablet, desktop)
 - ✅ Hero landing page with animated elements
 - ✅ User authentication flow (login/register)
@@ -33,6 +35,7 @@ A complete, production-ready MERN stack application with:
 - ✅ Axios interceptors for token management
 
 ### Design
+
 - ✅ Notion/Linear/Vercel-inspired minimal aesthetic
 - ✅ Color scheme: Green primary (#00C16A) aligned with SDG 8
 - ✅ Typography: Poppins (headings) + Inter (body)
@@ -47,6 +50,7 @@ A complete, production-ready MERN stack application with:
 ### Quick Start (3 steps)
 
 1. **Setup Environment**
+
 ```powershell
 cd backend
 cp ../.env.example .env
@@ -54,6 +58,7 @@ cp ../.env.example .env
 ```
 
 2. **Install & Seed**
+
 ```powershell
 # Backend
 cd backend
@@ -68,6 +73,7 @@ npm run dev
 ```
 
 3. **Open Browser**
+
 - Frontend: http://localhost:5173
 - Backend API: http://localhost:5000
 
@@ -76,6 +82,7 @@ npm run dev
 ## 📋 Key Features Demo
 
 ### 1. Transparent Recommendations
+
 ```
 User Profile:
 - Skills: [JavaScript, React, HTML, CSS]
@@ -91,6 +98,7 @@ Recommendation Engine Returns:
 ```
 
 ### 2. User Journey
+
 1. **Landing Page** → Click "Get Started"
 2. **Register** → Enter name, email, password, select education/experience/track
 3. **Dashboard** → See personalized job & resource recommendations
@@ -100,6 +108,7 @@ Recommendation Engine Returns:
 7. **Resources** → Browse courses, filter by cost (Free/Paid)
 
 ### 3. API Endpoints
+
 ```
 POST /api/auth/register          - Create account
 POST /api/auth/login            - Login
@@ -118,6 +127,7 @@ POST /api/seed                  - Seed database (dev only)
 ## 🎨 Design Highlights
 
 ### Color Palette
+
 ```css
 --primary: #00C16A (Green - SDG 8 theme)
 --primary-dark: #009956
@@ -128,11 +138,13 @@ POST /api/seed                  - Seed database (dev only)
 ```
 
 ### Responsive Breakpoints
+
 - Mobile: ≤480px (1 column)
 - Tablet: 481-1024px (2 columns)
 - Desktop: ≥1025px (3 columns)
 
 ### Animations
+
 - Page transitions: Fade + slide up
 - Card hovers: Lift effect (scale + shadow)
 - Hero elements: Floating shapes (infinite loop)
@@ -144,6 +156,7 @@ POST /api/seed                  - Seed database (dev only)
 ## 📦 File Highlights
 
 ### Backend Structure (37 files)
+
 ```
 backend/
 ├── server.js                   # Main entry, Express setup
@@ -162,6 +175,7 @@ backend/
 ```
 
 ### Frontend Structure (47 files)
+
 ```
 frontend/
 ├── src/
@@ -201,18 +215,21 @@ frontend/
 ## 🌍 Deployment Ready
 
 ### Vercel (Frontend)
+
 - Zero-config Vite support
 - Automatic HTTPS
 - Global CDN
 - Environment variables in dashboard
 
 ### Render (Backend)
+
 - Auto-deploy from Git
 - Free MongoDB Atlas tier
 - Environment variables
 - Health checks
 
 ### Railway (Alternative)
+
 - Full-stack in one platform
 - Auto-scaling
 - PostgreSQL/MongoDB support
@@ -222,6 +239,7 @@ frontend/
 ## 📊 Seed Data Summary
 
 ### Jobs (20 total)
+
 - 6 Internships
 - 5 Full-time
 - 4 Part-time
@@ -233,6 +251,7 @@ frontend/
 **Locations**: Remote, Dhaka, Chittagong, Sylhet
 
 ### Resources (20 total)
+
 - 12 Free
 - 7 Paid
 - 1 Freemium
@@ -252,7 +271,7 @@ for each job:
   if matchedSkills.length > 0:
     rank by: experienceMatch + skillMatchCount
     include reason: "Matches X skills: skill1, skill2..."
-    
+
 for each resource:
   matchedSkills = intersection(resource.relatedSkills, user.skills)
   careerMatch = resource.covers(user.careerTrack)
@@ -292,6 +311,7 @@ for each resource:
 ## 🎓 Learning Outcomes
 
 This project demonstrates:
+
 - ✅ Full-stack MERN architecture
 - ✅ JWT authentication flow
 - ✅ Protected routes (backend + frontend)

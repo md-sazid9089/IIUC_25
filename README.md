@@ -5,6 +5,7 @@
 ## 🚀 Tech Stack
 
 ### Frontend
+
 - **React 18** with Vite
 - **TailwindCSS** for styling
 - **Framer Motion** for animations
@@ -14,6 +15,7 @@
 - **Lucide React** for icons
 
 ### Backend
+
 - **Node.js** with Express
 - **MongoDB** with Mongoose
 - **JWT** for authentication
@@ -33,6 +35,7 @@
 ## 🛠️ Setup & Installation
 
 ### Prerequisites
+
 - Node.js (v18+)
 - MongoDB (local or Atlas)
 - npm or yarn
@@ -81,6 +84,7 @@ Frontend will run on `http://localhost:5173`
 ## 🌱 Seeding Data
 
 The seed script populates the database with:
+
 - **15-20 Jobs** (Internships, Full-time, Freelance, etc.)
 - **15-20 Learning Resources** (Courses, tutorials, etc.)
 
@@ -89,12 +93,14 @@ Run: `npm run seed` from the `/backend` directory
 ## 🎯 Features
 
 ### For Students & Fresh Graduates
+
 - ✅ **Smart Job Matching** — Discover jobs aligned with your skills
 - 📚 **Personalized Learning Paths** — Get relevant courses and resources
 - 📝 **CV & Profile Builder** — Showcase your experience and aspirations
 - 🎯 **Transparent Recommendations** — See exactly why each job/resource matches you
 
 ### For Platform
+
 - 🔐 **Secure Authentication** — JWT-based login/register
 - 🎨 **Beautiful UI** — Notion/Linear-inspired minimal design
 - 📱 **Fully Responsive** — Mobile, tablet, desktop optimized
@@ -104,24 +110,30 @@ Run: `npm run seed` from the `/backend` directory
 ## 🔗 API Endpoints
 
 ### Authentication
+
 - `POST /api/auth/register` — Register new user
 - `POST /api/auth/login` — Login and get JWT token
 
 ### Users
+
 - `GET /api/users/me` — Get current user profile (protected)
 - `PUT /api/users/:id` — Update user profile (protected)
 
 ### Jobs
+
 - `GET /api/jobs` — List all jobs (supports filters)
 - `GET /api/jobs/:id` — Get job details
 
 ### Resources
+
 - `GET /api/resources` — List all learning resources (supports filters)
 
 ### Recommendations
+
 - `GET /api/recommendations/:userId` — Get personalized job & resource recommendations
 
 ### Utilities
+
 - `POST /api/contact` — Submit contact form
 - `POST /api/seed` — Seed database (development only)
 
@@ -130,12 +142,14 @@ Run: `npm run seed` from the `/backend` directory
 ### Frontend (Vercel/Netlify)
 
 **Vercel:**
+
 ```bash
 cd frontend
 vercel
 ```
 
 **Netlify:**
+
 ```bash
 cd frontend
 npm run build
@@ -143,11 +157,13 @@ npm run build
 ```
 
 Set environment variable:
+
 - `VITE_API_URL` → Your backend URL
 
 ### Backend (Render/Railway)
 
 **Render:**
+
 1. Connect your GitHub repo
 2. Select `/backend` as root directory
 3. Build command: `npm install`
@@ -155,6 +171,7 @@ Set environment variable:
 5. Add environment variables in Render dashboard
 
 **Railway:**
+
 ```bash
 cd backend
 railway login
@@ -163,6 +180,7 @@ railway up
 ```
 
 Set environment variables:
+
 - `MONGO_URI` → MongoDB connection string
 - `JWT_SECRET` → Random secret key
 - `PORT` → 5000 (or Railway assigns)
@@ -170,6 +188,7 @@ Set environment variables:
 ## 🎨 Design System
 
 ### Colors
+
 - Background: `#FFFFFF`
 - Primary: `#00C16A` (Green)
 - Primary Dark: `#009956`
@@ -178,6 +197,7 @@ Set environment variables:
 - Border: `#E5E7EB`
 
 ### Typography
+
 - **Headings:** Poppins
 - **Body:** Inter
 
